@@ -133,7 +133,7 @@ class SudokuUI(Frame):
             self.canvas.focus_set()
 
             # get row and col numbers from x,y coordinates
-            row, col = (y - MARGIN) / SIDE, (x - MARGIN) / SIDE
+            row, col = int((y - MARGIN) / SIDE), int((x - MARGIN) / SIDE)
 
             # if cell was selected already - deselect it
             if (row, col) == (self.row, self.col):
